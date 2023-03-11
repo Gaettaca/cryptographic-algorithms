@@ -1,1 +1,1 @@
-### A "substitution cipher" decoder based on hill climbing algorithm.
+### A "substitution cipher" decoder based on hill-climbing algorithm.
