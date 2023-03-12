@@ -1,6 +1,7 @@
 from ngram_score import NgramScore
 import random
 
+
 def decipher(ctext: str, key: str) -> str:
     return ctext.translate(ctext.maketrans(''.join(key), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
 
@@ -32,7 +33,7 @@ def hill_climbing_algorithm(filename: str):
     for i in range(10):
         random.shuffle(parent_key)
         deciphered = decipher(ctext
-, parent_key)
+                              , parent_key)
         parent_score = ngram.score(ctext)
         count = 0
         while count < 1000:
